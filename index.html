@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamélia - Cosméticos Naturais</title>
+    <!-- Vinculando o arquivo CSS externo que usaremos depois -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO: Contém o logo e o menu principal do site -->
+    <header>
+        <div class="logo">
+            <!-- Seu Logotipo oficial -->
+            <img src="imagens/LogotipoKamelia.png" alt="Logotipo Kamélia Cosméticos">
+        </div>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO (BANNER): Primeira seção de impacto do site -->
+        <section id="inicio" class="hero">
+            <div class="hero-conteudo">
+                <h1>Beleza natural e autocuidado para sua pele</h1>
+                <p>Descubra o poder dos cosméticos artesanais feitos com carinho e essências florais.</p>
+                <a href="#produtos" class="btn-cta">Ver Catálogo</a>
+            </div>
+        </section>
+
+        <!-- SOBRE: História e conceito da marca -->
+        <section id="sobre" class="sobre">
+            <h2>Sobre a Kamélia</h2>
+            <p>A Kamélia nasceu do desejo de trazer o melhor da natureza para a sua rotina de cuidados diários. Nossos cosméticos são desenvolvidos com ingredientes selecionados, tons pastéis e fragrâncias florais para proporcionar uma experiência única de bem-estar e sofisticação.</p>
+        </section>
+
+        <!-- PRODUTOS: Seção com os cards de produtos -->
+        <section id="produtos" class="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="cards-container">
+
+                <!-- Card 1 -->
+                <article class="card-produto">
+                    <img src="imagens/Luryacard.jpg" alt="Cosmético Lúrya Kamélia">
+                    <h3>Linha Lúrya</h3>
+                    <p>Cuidado diário e profundo com uma fórmula suave e essência marcante.</p>
+                    <span class="preco">R$ 49,90</span>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card-produto">
+                    <img src="imagens/serenacard.jpg" alt="Cosmético Serena Kamélia">
+                    <h3>Linha Serena</h3>
+                    <p>Propriedades calmantes para trazer paz e hidratação para a sua pele.</p>
+                    <span class="preco">R$ 49,90</span>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card-produto">
+                    <img src="imagens/bellonacard.jpg" alt="Cosmético Bellona Kamélia">
+                    <h3>Linha Bellona</h3>
+                    <p>Toque sofisticado e revigorante com o melhor dos extratos florais.</p>
+                    <span class="preco">R$ 54,90</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- GALERIA: Fotos dos cosméticos, cada uma em uma figure com legenda -->
+        <section id="galeria" class="galeria">
+            <h2>Nossos Cuidados em Fotos</h2>
+            <div class="galeria-container">
+                <figure>
+                    <img src="imagens/creme-clareador.jpg" alt="Pote de creme clareador Kamélia sobre superfície clara">
+                    <figcaption>Creme Clareador</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/homespray-vanilla.jpg" alt="Frasco de home spray aroma vanilla">
+                    <figcaption>Home Spray Vanilla</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/homespray-brisa.jpg" alt="Frasco de home spray aroma brisa">
+                    <figcaption>Home Spray Brisa</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/seiva-imune.jpg" alt="Frasco do produto Seiva Imune">
+                    <figcaption>Seiva Imune</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/serene-linha.jpg" alt="Conjunto de produtos da linha Serena">
+                    <figcaption>Linha Serena</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/serene-creme.jpg" alt="Pote de creme hidratante da linha Serena">
+                    <figcaption>Serena Creme Hidratante</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/lavanda.jpg" alt="Produto com essência de lavanda">
+                    <figcaption>Linha Lavanda</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/flor-do-sertao.jpg" alt="Produto da linha Flor do Sertão">
+                    <figcaption>Linha Flor do Sertão</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- CONTATO: Formulário de contato -->
+        <section id="contato" class="contato">
+            <h2>Fale Conosco</h2>
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu melhor e-mail">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Como podemos te ajudar?"></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- RODAPÉ: Redes sociais e direitos autorais -->
+    <footer>
+        <nav aria-label="Contato">
+            <ul class="redes-sociais">
+                <li><a href="https://www.instagram.com/kmeliaoficial?stkn=MTJkb2Z0ZXc0bWR6Nw%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://wa.me/5511935050070" target="_blank" rel="noopener">Fale pelo WhatsApp</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Kamélia Cosméticos. Todos os direitos reservados.</p>
+        <p>Porque você merece se cuidar.</p>
+    </footer>
+
+</body>
+</html>
